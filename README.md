@@ -1,2 +1,8 @@
 # DatabasesAdvanced
-In this repos I will post my changes and my work for the course DatabasesAdvanced. 
+
+Course 1)
+First commands:
+pip install bs4
+pip install requests
+py bitcoin.py
+
