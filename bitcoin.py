@@ -2,9 +2,7 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
-
-datam =  []
-dataa = []
+f = open("LogBitCoinMost.txt", "w")
 def scrape():
   url = 'https://www.blockchain.com/btc/unconfirmed-transactions'
   r = requests.get(url)
@@ -26,6 +24,10 @@ def scrape():
   
 
 def highest(naam, amount):
+  if len(naam) == 0: #Dit is omdat ik soms een index out of range kreeg ik weet ook nie hoe maar nu gaat die da opnieuw proberen zodat die shit wel doet
+    scrape()
+  #print(len(naam))
+  #print(len(amount))
   h = 0
   p = -1
   a = 'koeloekoeloe'
@@ -35,12 +37,18 @@ def highest(naam, amount):
       a = amount[x]
       h = amount[x].replace(',', '')
       p = x
+  output = a + ' ' + naam[p]
   print(a, naam[p])
+  #Maakt file
+  f = open("LogBitcoinMost.txt", "a")
+  f.write(output)
+  f.write("\n")
+  f.close()
 
 
 
 while True:
-  scrape()
-  time.sleep(60)
   datam =  []
   dataa = []
+  scrape()
+  time.sleep(60)
