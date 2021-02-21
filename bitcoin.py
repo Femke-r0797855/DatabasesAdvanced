@@ -21,11 +21,11 @@ def scrape():
     if amount[tag].text.find('$') ==0:
       dataa.append(amount[tag].text[1:])
       #print(amount)
+    
   highest(datam, dataa)
   
 
 def highest(naam, amount):
-  #print(naam)
   h = 0
   p = -1
   a = 'koeloekoeloe'
@@ -42,3 +42,5 @@ def highest(naam, amount):
 while True:
   scrape()
   time.sleep(60)
+  datam =  []
+  dataa = []
