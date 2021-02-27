@@ -1,3 +1,5 @@
+![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400704-6ee56400-794a-11eb-97c4-77d7b02acdcf.PNG)
+![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400714-799ff900-794a-11eb-8911-112bda6df0b9.PNG)
 # DatabasesAdvanced
 After you install the ubuntu you need to put next commands in the terminal for the file to work.<br>
 <br>
