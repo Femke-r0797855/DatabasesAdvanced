@@ -1,11 +1,11 @@
 # DatabasesAdvanced
 After you install the ubuntu you need to put next commands in the terminal for the file to work.<br>
 <br>
-- `pip3 install bs4 <br>`
-- `pip3 install requests <br>`
-- `chmod +x bitcoin.py <br>`
-- `python3 bitcoin.py <br>`
-- `pip3 install pymongo<br>`
+- `pip3 install bs4`
+- `pip3 install requests`
+- `chmod +x bitcoin.py`
+- `python3 bitcoin.py`
+- `pip3 install pymongo`
 
 We need to install MongoBD and get the results we put our output into a DB.
 You download the file or make it yourself.
