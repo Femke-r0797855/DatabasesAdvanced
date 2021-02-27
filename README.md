@@ -27,3 +27,5 @@ Install MongoDB Compass:<br>
 `sudo dpkg -i mongodb-compass_1.25.0_amd64.deb`<br>
 Start MongoDB Compass:<br>
 `mongodb-compass`<br>
+
+To test and start this code you need to type into the terminal following command: ` python3 bitcoin.py`
