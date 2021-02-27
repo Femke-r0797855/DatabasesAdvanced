@@ -1,8 +1,17 @@
 import time
 from bs4 import BeautifulSoup
 import requests
+import pymongo as mongo
 
-f = open("LogBitCoinMost.txt", "w")
+#Database aanmaken
+client = mongo.MongoClient("mongodb://127.0.0.1:27017") #Connect to mongo db
+
+db_BitCoin = client["BitCoinTransactie"]
+col_BitCoin = db_BitCoin["BitCoin"]
+
+#File maken als deze niet bestaat
+#f = open("LogBitCoinMost.txt", "w")
+#Scaper
 def scrape():
   url = 'https://www.blockchain.com/btc/unconfirmed-transactions'
   r = requests.get(url)
@@ -40,10 +49,13 @@ def highest(naam, amount):
   output = a + ' ' + naam[p]
   print(a, naam[p])
   #Maakt file
-  f = open("LogBitcoinMost.txt", "a")
-  f.write(output)
-  f.write("\n")
-  f.close()
+  #f = open("LogBitcoinMost.txt", "a")
+  #f.write(output)
+  #f.write("\n")
+  #f.close()
+  
+  output = {"hash": naam[p] , "amount": a}
+  x = col_BitCoin.insert_one(output)
 
 
 
