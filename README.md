@@ -21,9 +21,9 @@ Then you put all the code into this file:
 Now we also need a visual representation of our database.
 So we install Compass.
 
-Downlaod mongoDB Compass:
-`wget https://downloads.mongodb.com/compass/mongodb-compass_1.25.0_amd64.deb`
-Install MongoDB Compass:
-`sudo dpkg -i mongodb-compass_1.25.0_amd64.deb`
-Start MongoDB Compass:
-`mongodb-compass`
+Downlaod mongoDB Compass:<br>
+`wget https://downloads.mongodb.com/compass/mongodb-compass_1.25.0_amd64.deb` <br>
+Install MongoDB Compass:<br>
+`sudo dpkg -i mongodb-compass_1.25.0_amd64.deb`<br>
+Start MongoDB Compass:<br>
+`mongodb-compass`<br>
