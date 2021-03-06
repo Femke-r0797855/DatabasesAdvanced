@@ -30,3 +30,16 @@ Start MongoDB Compass:<br>
 
 To test and start this code you need to type into the terminal following command: ` python3 bitcoin.py`
 ![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400704-6ee56400-794a-11eb-97c4-77d7b02acdcf.PNG)
+!!! 
+Ga naar de plaats waar je het wilt installeren
+(cd Dekstop)
+touch RedisInstall -> bash file maken
+ales in file steken 
+en dan bash RedisInstal
+test of het werkt
+
+sudo apt install redis-tools
+sudo apt install redis-server
+ping
+
+pip3 install redis
