@@ -1,6 +1,7 @@
 # DatabasesAdvanced
 After you install the ubuntu you need to put next commands in the terminal for the file to work.<br>
 <br>
+First you need to install python : `sudo apt install python3.8`
 - `pip3 install bs4`
 - `pip3 install requests`
 - `chmod +x bitcoin.py`
