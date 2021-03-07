@@ -4,8 +4,8 @@ After you install the ubuntu you need to put next commands in the terminal for t
 - `pip3 install bs4`
 - `pip3 install requests`
 - `chmod +x bitcoin.py`
-- `python3 bitcoin.py`
 - `pip3 install pymongo`
+- `pip3 install redis`
 
 We need to install MongoBD and get the results we put our output into a DB.
 You download the file or make it yourself.
@@ -21,25 +21,37 @@ Then you put all the code into this file:
 Now we also need a visual representation of our database.
 So we install Compass.
 
-Downlaod mongoDB Compass:<br>
+Downloadd mongoDB Compass:<br>
 `wget https://downloads.mongodb.com/compass/mongodb-compass_1.25.0_amd64.deb` <br>
 Install MongoDB Compass:<br>
 `sudo dpkg -i mongodb-compass_1.25.0_amd64.deb`<br>
 Start MongoDB Compass:<br>
 `mongodb-compass`<br>
 
-To test and start this code you need to type into the terminal following command: ` python3 bitcoin.py`
+Download Redis <br>
+
+For Redis there is a bash file included in this repos 
+To test if it is installed, Type the following commands:
+- `redis-cli`
+- `ping`
+If you don't get any errors, then Redis is ready. 
+If you get an error, try one of these commands:
+- `sudo apt install redis-server`
+- `sudo apt install redis-tools`
+
+When you want to run the code, type this into your terminal:
+- `python3 bitcoin.py`
+To test and start this code you need to type into the terminal following command: `python3 bitcoin.py`
+
 ![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400704-6ee56400-794a-11eb-97c4-77d7b02acdcf.PNG)
-!!! 
+
+
 Ga naar de plaats waar je het wilt installeren
 (cd Dekstop)
 touch RedisInstall -> bash file maken
-ales in file steken 
+alles in file steken 
 en dan bash RedisInstal
 test of het werkt
 
-sudo apt install redis-tools
-sudo apt install redis-server
-ping
 
 pip3 install redis
