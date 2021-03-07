@@ -38,20 +38,10 @@ If you don't get any errors, then Redis is ready.
 If you get an error, try one of these commands:
 - `sudo apt install redis-server`
 - `sudo apt install redis-tools`
-
+<br>
 When you want to run the code, type this into your terminal:
 - `python3 bitcoin.py`
 To test and start this code you need to type into the terminal following command: `python3 bitcoin.py`
 
 ![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400704-6ee56400-794a-11eb-97c4-77d7b02acdcf.PNG)
 
-
-Ga naar de plaats waar je het wilt installeren
-(cd Dekstop)
-touch RedisInstall -> bash file maken
-alles in file steken 
-en dan bash RedisInstal
-test of het werkt
-
-
-pip3 install redis
