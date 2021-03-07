@@ -39,7 +39,8 @@ If you get an error, try one of these commands:
 - `sudo apt install redis-server`
 - `sudo apt install redis-tools`
 <br>
-When you want to run the code, type this into your terminal: `python3 bitcoin.py`
+When you want to run the code, type this into your terminal: <br>
+`python3 bitcoin.py`
 
 ![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400704-6ee56400-794a-11eb-97c4-77d7b02acdcf.PNG)
 
