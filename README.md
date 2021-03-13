@@ -53,8 +53,9 @@ If you want to do it with docker
 - sudo docker pull mongo
 - sudo docker images
 <br>
-- docker run -d -p 27017:27017 mongo
-- docker run -d -p 6379=6379 redis 
-- docker ps
+
+- `docker run -d -p 27017:27017 mongo`
+- `docker run -d -p 6379=6379 redis `
+- `docker ps`
 
 
