@@ -47,14 +47,14 @@ https://phoenixnap.com/kb/how-to-install-python-3-ubuntu
 
 If you want to do it with docker
 
-sudo apt-get update
-sudo apt-get install docker.io
-sudo docker pull redis
-sudo docker pull mongo
-sudo docker images
-
-docker run -d -p 27017:27017 mongo
-docker run -d -p 6379=6379 redis 
-docker ps
+-sudo apt-get update
+-sudo apt-get install docker.io
+-sudo docker pull redis
+-sudo docker pull mongo
+-sudo docker images
+<br>
+-docker run -d -p 27017:27017 mongo
+-docker run -d -p 6379=6379 redis 
+-docker ps
 
 
