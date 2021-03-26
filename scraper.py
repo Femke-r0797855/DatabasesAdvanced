@@ -33,12 +33,17 @@ def scrape():
   #Data Bitcoin
   for tag in range(len(amount)):
     if amount[tag].text.find('BTC') > 0:
-      datab.append(amount[tag].text[1:])
+      datab.append(amount[tag].text)
+      
+  for tag in range(len(amount)):
+    if amount[tag].text.find(':') > 0:
+      datat.append(amount[tag].text)   
+         
   #print("Hallo ik ben klaar voor te scrapen")
-  cach(datan, dataa, datab)
+  cach(datan, dataa, datab, datat)
   
 #Caching in Redis
-def cach(datan, dataa, datab):
+def cach(datan, dataa, datab,datat):
   if len(datan) == 0: #if no input
     scrape()
     
@@ -46,8 +51,10 @@ def cach(datan, dataa, datab):
   #print(len(datan))
   #print(len(dataa))
   #print(len(datab))
+  #print(datat)
+  
   for x in range(len(datan)):
-    data = dataa[x]+"-"+datab[x]
+    data = dataa[x]+"-"+datab[x] + "-" +datat[x]
     r.set(datan[x], data , ex = 60)
   
   print('Cached in Redis')
