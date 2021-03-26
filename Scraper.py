@@ -10,8 +10,15 @@ db_BitCoin = client["BitCoinTransactie"]
 col_BitCoin = db_BitCoin["BitCoin"]
 
 
+
+
 #Scaper
 def scrape():
+  datan =  [] #Data naam
+  dataa = [] #Data Amount
+  datab= [] #Data BitCoin
+  datat=[] #Data Time
+  
   url = 'https://www.blockchain.com/btc/unconfirmed-transactions'
   r = requests.get(url)
   soup = BeautifulSoup(r.content, features="html.parser")
@@ -58,12 +65,3 @@ def cach(datan, dataa, datab,datat):
     r.set(datan[x], data , ex = 60)
   
   print('Cached in Redis')
-  
-
-while True:
-  datan =  [] #Data naam
-  dataa = [] #Data Amount
-  datab= [] #Data BitCoin
-  datat=[] #Data Time
-  scrape()
-  time.sleep(60)
