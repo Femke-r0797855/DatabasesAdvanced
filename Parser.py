@@ -12,8 +12,11 @@ col_BitCoin = db_BitCoin["BitCoin"]
 
 #Gegevens uit Redis halen
 def parse():
+  x = []
   highest = 0
   plaats = -1
+  bit = -1
+  time = -1
   name = 'IetsAnders'
   
   #print("Ik ben niet lui")
@@ -21,18 +24,20 @@ def parse():
   for key in r.keys():
     naam = key
     data = r.get(key)
-    x = data.split("-")
-    print()
+    #print(data)
+    x = data.decode().split("-")
+    #print(naam)
+    #print(x)
     
-    if float(highest)< x[0]:
+    q = x[0].replace(',', '')
+    #q = q.replace(',','.')  #ja pff foutje met vanalles
+
+    if float(highest) < float(q): 
       name = naam
-      highest = x[0]
-    
-  print(str(name) + str(highest))
+      highest = float(q)
+      bit = x[1] 
+      time = x[2]   
+  print(str(name) +" "+ str(highest) +" "+ str(bit)+ str(time))
   
-  
-#Timer
-while True:
-  x = []
-  parse()
-  time.sleep(60)
+  output = {"hash": name , "amount": highest, "bitcoin": bit , "time": time }
+  x = col_BitCoin.insert_one(output)
