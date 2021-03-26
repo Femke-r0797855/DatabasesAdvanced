@@ -34,14 +34,24 @@ def scrape():
   for tag in range(len(amount)):
     if amount[tag].text.find('BTC') > 0:
       datab.append(amount[tag].text[1:])
-
+  #print("Hallo ik ben klaar voor te scrapen")
   cach(datan, dataa, datab)
   
 #Caching in Redis
-def cach(naam, amount):
-  if len(naam) == 0: #Dit is omdat ik soms een index out of range kreeg ik weet ook nie hoe maar nu gaat die da opnieuw proberen zodat die shit wel doet
+def cach(datan, dataa, datab):
+  if len(datan) == 0: #if no input
     scrape()
-
+    
+  r= redis.Redis()
+  #print(len(datan))
+  #print(len(dataa))
+  #print(len(datab))
+  for x in range(len(datan)):
+    data = dataa[x]+"-"+datab[x]
+    r.set(datan[x], data , ex = 60)
+  
+  print('Cached in Redis')
+  
 
 while True:
   datan =  [] #Data naam
