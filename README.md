@@ -16,3 +16,11 @@ https://hub.docker.com/repository/docker/r0797855/bitcoinscraper
 https://phoenixnap.com/kb/how-to-install-python-3-ubuntu
 
 
+Wilt u naar mongo compas kijken volg de volgende stappen.
+Downloadd mongoDB Compass:<br>
+`wget https://downloads.mongodb.com/compass/mongodb-compass_1.25.0_amd64.deb` <br>
+Install MongoDB Compass:<br>
+`sudo dpkg -i mongodb-compass_1.25.0_amd64.deb`<br>
+Start MongoDB Compass:<br>
+`mongodb-compass`<br>
+
