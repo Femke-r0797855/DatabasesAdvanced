@@ -6,9 +6,9 @@ https://hub.docker.com/repository/docker/r0797855/bitcoinscraper
 
 - sudo apt-get update
 - sudo apt-get install docker.io
-- docker pull r0797855/bitcoinscraper:latest
-- docker run -d --network="host" redis
-- docker run --network="host" r0797855/bitcoinscraper:latest
+- sudo docker pull r0797855/bitcoinscraper:latest
+- sudo docker run -d --network="host" redis
+- sudo docker run --network="host" r0797855/bitcoinscraper:latest
 
 
 ![MongoDBWerkt](https://user-images.githubusercontent.com/79083840/109400704-6ee56400-794a-11eb-97c4-77d7b02acdcf.PNG)
