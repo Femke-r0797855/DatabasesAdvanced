@@ -1,4 +1,14 @@
 # DatabasesAdvanced
+First you need to install Ubuntu. I used this to make my dockerfile.
+This is a link to my dockerfile.
+Then you download the 
+https://hub.docker.com/repository/docker/r0797855/bitcoinscraper
+
+- sudo apt-get update
+- sudo apt-get install docker.io
+- docker run r0797855/bitcoinscraper:latest
+
+
 After you install the ubuntu you need to put next commands in the terminal for the file to work.<br>
 <br>
 First you need to install python : `sudo apt install python3.8`
