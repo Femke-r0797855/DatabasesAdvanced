@@ -6,7 +6,7 @@ https://hub.docker.com/repository/docker/r0797855/bitcoinscraper
 
 - sudo apt-get update
 - sudo apt-get install docker.io
-- docker pull r0788048/bitocinscraper:latest
+- docker pull r0797855/bitcoinscraper:latest
 - docker run -d --network="host" redis
 - docker run --network="host" r0788048/bitcoinscraper:latest
 
