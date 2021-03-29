@@ -8,7 +8,7 @@ https://hub.docker.com/repository/docker/r0797855/bitcoinscraper
 - `sudo apt-get install docker.io`
 - `sudo docker pull r0797855/bitcoinscraper:latest`
 - `sudo docker run -d --network="host" redis`
-- `sudo docker run -d --network="host" redis`
+- `sudo docker run -d --network="host" mongo`
 - `sudo docker run --network="host" r0797855/bitcoinscraper:latest`
 
 
